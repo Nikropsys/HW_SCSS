@@ -1,0 +1,64 @@
+/*
+@font-face  {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$fontsPath}slick.eot');
+    src: url('.#{$fontsPath}slick.eot?#iefix') format('embedded-opentype'),
+        url('#{$fontsPath}slick.woff') format('woff'),
+        url('#{$fontsPath}slick.ttf') format('truetype'),
+        url('#{$fontsPath}#slick') format('svg');
+}
+*/
+
+html{
+    background: $backGroundColor;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 320px;
+    border: 1px solid red;
+    background: black;
+    /*margin-left: 4%;
+    margin-right: 4%;*/
+    padding-bottom: 20px;
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+
+}
+
+.col__content{
+    background: linear-gradient(to right, blue, black);
+}
+
+.dateText {
+    line-height: 0;
+    font-size: rem(13px);
+    color: $dateColor;
+}
+
+.title {
+    font-family: $baseFontFamily;
+    font-size: rem(30px);
+    font-weight: lighter;
+    color: white;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.col__large {
+    background: url("#{$imagesPath}ColumnBG.jpg") no-repeat;
+    background-size: cover;
+}
