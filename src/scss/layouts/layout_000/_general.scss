@@ -13,6 +13,7 @@
 
 html{
     background: $backGroundColor;
+    font-family: $baseFontFamily;
 }
 
 .container{
@@ -24,13 +25,13 @@ html{
 .col{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
+    min-height: rem(320px);
     border: 1px solid red;
-    background: black;
-    /*margin-left: 4%;
-    margin-right: 4%;*/
-    padding-bottom: 20px;
+    background: $white;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: rem(20px);
+    margin-bottom: rem(20px);
 
     &:last-of-type {
         padding-bottom: 0;
@@ -42,14 +43,16 @@ html{
     background: linear-gradient(to right, blue, black);
 }
 
-.dateText {
+.col__dateText {
+    padding-top: rem(27px);
     line-height: 0;
     font-size: rem(13px);
     color: $dateColor;
+    text-transform: uppercase;
+    padding-left: rem(25px);
 }
 
-.title {
-    font-family: $baseFontFamily;
+.col__title {
     font-size: rem(30px);
     font-weight: lighter;
     color: white;
@@ -61,4 +64,26 @@ html{
 .col__large {
     background: url("#{$imagesPath}ColumnBG.jpg") no-repeat;
     background-size: cover;
+    justify-content: flex-end;
+    padding-bottom: rem(44px);
+}
+
+.col__img  {
+    /*display: block;*/
+}
+
+.col__contentText {
+    padding-top: rem(25px);
+    font-size: rem(23px);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: rem(25px);
+}
+
+.col__authorImg {
+    height: rem(55px);
+    width: rem(55px);
+    padding-top: rem(70px);
+    padding-left: rem(25px);
+    max-width: rem(65px);
 }
