@@ -23,9 +23,11 @@ html{
 }
 
 .col{
+    position: relative;
     display: flex;
     flex-direction: column;
-    min-height: rem(320px);
+    /*min-height: rem(320px);*/
+    flex-basis: rem(500px);
     border: 1px solid red;
     background: $white;
     margin-left: 2%;
@@ -33,9 +35,9 @@ html{
     padding-bottom: rem(20px);
     margin-bottom: rem(20px);
 
-    &:last-of-type {
+/*    &:last-of-type {
         padding-bottom: 0;
-    }
+    }*/
 
 }
 
@@ -81,9 +83,12 @@ html{
 }
 
 .col__authorImg {
-    height: rem(55px);
-    width: rem(55px);
-    padding-top: rem(70px);
+    position:absolute;
+    bottom: rem(30px);
+    /*left: rem(1px);*/
+    /*height: rem(55px);
+    width: rem(55px);*/
+    /*padding-top: rem(40px);*/
     padding-left: rem(25px);
     max-width: rem(65px);
 }
