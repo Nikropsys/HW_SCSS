@@ -1,0 +1,14 @@
+.container {
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  height: rem(540px);
+  margin-left: 2%;
+}
+
+.col__large {
+  margin-left: 0;
+}
